@@ -11,3 +11,8 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - name: Super-Linter
+        uses: super-linter/super-linter@v5.3.1
+        env:
+          DEFAULT_BRANCH: main
+
